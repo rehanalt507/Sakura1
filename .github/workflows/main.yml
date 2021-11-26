@@ -1,4 +1,4 @@
-name: Host On Heroku
+name: deploy
 
 on: workflow_dispatch
 
@@ -16,7 +16,7 @@ jobs:
 
         with:
 
-          region: "us"
+          region: "eu"
 
           branch: "master"
 
@@ -24,10 +24,10 @@ jobs:
 
           stack: "container"
 
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          heroku_app_name: "Sakuramirrorbotrepo1" 
 
           docker_heroku_process_type: worker
-        env:
-          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
+
+          heroku_email: "anjali.3008@rediffmail.com"
+
+          heroku_api_key: "26a27b91-2e9d-41d9-bcfb-e87f65ab31ba"
