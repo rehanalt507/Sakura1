@@ -24,7 +24,7 @@ jobs:
 
           stack: "container"
 
-          heroku_app_name: "Sakuramirrorbotrepo1" 
+          heroku_app_name: "kkthnxby02" 
 
           docker_heroku_process_type: worker
 
